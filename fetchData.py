@@ -14,4 +14,6 @@ class fetchData():
         for i in person[0]:
             listName.append(i['name'])
 
+        print("content : \n\n",request.content)
+        print("headers : \n\n",request.headers)
         return listName
