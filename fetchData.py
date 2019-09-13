@@ -14,6 +14,10 @@ class fetchData():
         for i in person[0]:
             listName.append(i['name'])
 
+        code = request.status_code
+
         print("content : \n\n",request.content)
         print("headers : \n\n",request.headers)
-        return listName
+        return {'name' : listName,
+                'status_code' : code,
+                }
